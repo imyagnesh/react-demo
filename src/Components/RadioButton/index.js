@@ -1,16 +1,20 @@
-import React, {PropTypes} from 'react';
-import './style.css';
+import React, { PropTypes } from 'react';
 
-const RadioButton = props => {
+const RadioButton = ({label, name, value, checked, onRadioClick}) => {
     return (
-        <div>
-            
-        </div>
+        <label>
+            <input type="radio" name={name} value={value} checked={checked} onClick={onRadioClick} />
+            {label}
+        </label>
     );
 };
 
 RadioButton.propTypes = {
-    
+    label: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired,
+    checked: PropTypes.bool,
+    onRadioClick: PropTypes.func.isRequired,
 };
 
 export default RadioButton;

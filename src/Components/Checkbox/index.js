@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react';
-import './style.css';
 
 const CheckBox = ({name, value, label, checked, onCheckboxClick}) => {
     return (
