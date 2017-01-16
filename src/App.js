@@ -39,7 +39,7 @@ class App extends Component {
         </div>
         <div className="App-intro">
           <Button label="Button" onClickButton={this.onClickButton} />
-          <Checkbox label="Checkbox Test" name="testCheckBox" value="true" onCheckboxClick={this.onCheckboxClick} checked={this.state.checkBoxchecked} />
+          <Checkbox label="Checkbox Test" className="checkbox-style" name="testCheckBox" value="true" onCheckboxClick={this.onCheckboxClick} checked={this.state.checkBoxchecked} />
           <RadioButton label="Checkbox Test" name="textRadio" value="true" onRadioClick={this.onRadioClick} checked={this.state.radioChecked} />
           <TextField name="demoText" value="Demo Test" />
         </div>

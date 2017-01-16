@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react';
 
-const CheckBox = ({name, value, label, checked, onCheckboxClick}) => {
+const CheckBox = ({name, value, label, checked, onCheckboxClick, className}) => {
     return (
-        <label>
-            <input type="checkbox" name={name} value={value} checked={checked} onClick={onCheckboxClick} />
+        <label className={className}>
+            <input type="checkbox"  name={name} value={value} checked={checked} onClick={onCheckboxClick} />
             {label}
         </label>
     );
@@ -14,6 +14,7 @@ CheckBox.propTypes = {
     value: PropTypes.string.isRequired,
     checked: PropTypes.bool,
     onCheckboxClick: PropTypes.func,
+    className: PropTypes.string,
 };
 
 export default CheckBox;
